@@ -1,7 +1,7 @@
 #!/bin/sh
 CWD=$(pwd)
-set -e
-
+set -ex
+export GOPROXY=https://goproxy.cn/,direct
 BUILD_ARCH=$(dpkg-architecture -qDEB_TARGET_ARCH)
 
 SRC=telegraf
