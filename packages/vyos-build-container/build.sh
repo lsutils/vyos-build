@@ -12,8 +12,10 @@ cd vyos-build/docker
 docker pull registry.cn-hangzhou.aliyuncs.com/ls-2018/vyos-build:sagitta-arm64-dd010101
 
 #echo "Pushing ${BRANCH_NAME} image to registry ${CUSTOM_DOCKER_REPO}..."
+docker tag registry.cn-hangzhou.aliyuncs.com/ls-2018/vyos-build:sagitta-arm64-dd010101 "${CUSTOM_DOCKER_REPO}/vyos/vyos-build:${BRANCH_NAME}-arm64"
 docker tag registry.cn-hangzhou.aliyuncs.com/ls-2018/vyos-build:sagitta-arm64-dd010101 "${CUSTOM_DOCKER_REPO}/vyos/vyos-build:${BRANCH_NAME}"
 docker push "${CUSTOM_DOCKER_REPO}/vyos/vyos-build:$BRANCH_NAME"
+docker push "${CUSTOM_DOCKER_REPO}/vyos/vyos-build:$BRANCH_NAME-arm64"
 #
 #echo "Cleaning previous image of ${BRANCH_NAME}..."
 #if [ "$previousImageId" != "" ]; then
