@@ -42,9 +42,9 @@ RUN grep "VERSION_ID" /etc/os-release || (echo 'VERSION_ID="12"' >> /etc/os-rele
 # `docker run --rm --privileged multiarch/qemu-user-static:register --reset`
 LABEL authors="VyOS Maintainers <maintainers@vyos.io>" \
       org.opencontainers.image.authors="VyOS Maintainers <maintainers@vyos.io>" \
-      org.opencontainers.image.url="https://github.com/notvyos/vyos-build" \
+      org.opencontainers.image.url="https://github.com/lsutils/vyos-build" \
       org.opencontainers.image.documentation="https://docs.vyos.io/en/latest/contributing/build-vyos.html" \
-      org.opencontainers.image.source="https://github.com/notvyos/vyos-build" \
+      org.opencontainers.image.source="https://github.com/lsutils/vyos-build" \
       org.opencontainers.image.vendor="Sentrium S.L." \
       org.opencontainers.image.licenses="GNU" \
       org.opencontainers.image.title="vyos-build" \
