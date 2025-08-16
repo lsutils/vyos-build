@@ -1,6 +1,6 @@
 #!/bin/bash
 CWD=$(pwd)
-set -e
+set -ex
 
 SRC=aws-gateway-load-balancer-tunnel-handler
 
@@ -34,5 +34,5 @@ EOL
 
 # Build the Debian package
 dpkg-deb --build aws-gwlbtun
-
+mv aws-gwlbtun.deb aws-gwlbtun_arm64.deb
 cp *.deb ${CWD}
