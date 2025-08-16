@@ -27,7 +27,7 @@ cp gwlbtun aws-gwlbtun/usr/bin
 cat <<EOL > aws-gwlbtun/DEBIAN/control
 Package: aws-gwlbtun
 Version: 1-eb51d33
-Architecture: amd64
+Architecture: arm64
 Maintainer: VyOS Maintainers autobuild@vyos.net
 Description: AWS Gateway Load Balancer Tunnel Handler
 EOL
