@@ -34,5 +34,4 @@ EOL
 
 # Build the Debian package
 dpkg-deb --build aws-gwlbtun
-mv aws-gwlbtun.deb aws-gwlbtun_arm64.deb
 cp *.deb ${CWD}

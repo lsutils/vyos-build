@@ -84,6 +84,6 @@ def call(description, architecture, pkgList, buildCmd) {
             currentBuild.result = 'SUCCESS'
         }
     } else {
-        archiveArtifacts artifacts: "**/*_${architecture}.deb", fingerprint: true
+        archiveArtifacts artifacts: "**/*.deb", fingerprint: true
     }
 }
